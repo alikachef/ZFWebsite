@@ -1,10 +1,9 @@
 import './App.css';
-import Home from './Components/Home/home'
-
+import PrayerTimes from './Components/PrayerTimes/prayerTimes';
 const App = () => {
   return (
     <div>
-      <Home />
+      <PrayerTimes />
     </div>
   );
 }

@@ -73,11 +73,6 @@ const PrayerTimes = () => {
                     {praytimes ?
                         praytimes.map((time) => (
                             <div className="prayer-times">
-                                <h1>Fajir : {time.data.timings.Fajr >= "13:00" ? StanderedTime(time.data.timings.Fajr) + " PM" : time.data.timings.Fajr + " AM"}</h1>
-                                <h1>Dhuhr : {time.data.timings.Dhuhr >= "13:00" ? StanderedTime(time.data.timings.Dhuhr) + " PM" : time.data.timings.Dhuhr + " AM"}</h1>
-                                <h1>Asr : {time.data.timings.Asr >= "13:00" ? StanderedTime(time.data.timings.Asr) + " PM" : time.data.timings.Asr + " AM"} </h1>
-                                <h1>Maghrib : {time.data.timings.Maghrib >= "13:00" ? StanderedTime(time.data.timings.Maghrib) + " PM" : time.data.timings.Maghrib + " AM"}</h1>
-                                <h1>Isha : {time.data.timings.Isha >= "13:00" ? StanderedTime(time.data.timings.Isha) + " PM" : time.data.timings.Isha + " AM"}</h1>
                                 {corrdinates.locations ?
                                     <div>
                                         <p>location: {corrdinates.locations[0].address.city + ", " + corrdinates.locations[0].address.state + ", " + corrdinates.locations[0].address.countryName}</p>
@@ -85,11 +80,17 @@ const PrayerTimes = () => {
                                     :
                                     <div>
                                         {entry && <p style={{ background: "red", color: "white" }}>Not Valid Location Entered</p>}
-                                        <p>Location: Zahra foundation</p>
+                                        <p>Location: Zahra foundation</p> 
                                         <p>Address: 963 Manakin Rd, Manakin Sabot, VA</p>
                                     </div>
                                 }
                                 <p>Note: Prayer Times are provided by Leva Institute, Qum</p>
+                                <h1>Fajir : {time.data.timings.Fajr >= "13:00" ? StanderedTime(time.data.timings.Fajr) + " PM" : time.data.timings.Fajr + " AM"}</h1>
+                                <h1>Dhuhr : {time.data.timings.Dhuhr >= "13:00" ? StanderedTime(time.data.timings.Dhuhr) + " PM" : time.data.timings.Dhuhr + " AM"}</h1>
+                                <h1>Asr : {time.data.timings.Asr >= "13:00" ? StanderedTime(time.data.timings.Asr) + " PM" : time.data.timings.Asr + " AM"} </h1>
+                                <h1>Maghrib : {time.data.timings.Maghrib >= "13:00" ? StanderedTime(time.data.timings.Maghrib) + " PM" : time.data.timings.Maghrib + " AM"}</h1>
+                                <h1>Isha : {time.data.timings.Isha >= "13:00" ? StanderedTime(time.data.timings.Isha) + " PM" : time.data.timings.Isha + " AM"}</h1>
+
                             </div>
                         ))
                         :

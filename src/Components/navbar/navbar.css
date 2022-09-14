@@ -12,6 +12,7 @@
     font-size: 21px;
     margin: 15px;
     color: black;
+    align-items: center;
   }
   
   .Navbar > .nav-items > a {

@@ -1,5 +1,6 @@
 import PrayerTimes from './Components/PrayerTimes/prayerTimes';
 import Navbar from './Components/navbar/Navbar';
+import Newsletter from './Components/Newsletter/Newsletter';
 
 import './App.css';
 import Header from './Components/header/Header';
@@ -10,6 +11,7 @@ const App = () => {
       <Navbar />
       <Header />
       <PrayerTimes />
+      <Newsletter />
     </div>
   );
 }

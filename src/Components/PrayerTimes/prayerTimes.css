@@ -1,0 +1,14 @@
+.text-center {
+  display: flex;
+  padding-right: 10px;
+}
+.subscribe {
+  display: flex;
+}
+
+
+@media (max-width: 700px) {
+  .text-center{
+    display: grid;
+  }
+}

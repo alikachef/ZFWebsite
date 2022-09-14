@@ -9,7 +9,7 @@ const Navbar = () => {
                 <a className="active" href="/home">Home</a>
                 <a href="/events">Events</a>
                 <a href="/about">About</a>
-                <a ><button class="button-donate" role="button">Donate</button></a>
+                {/*<a ><button class="button-donate" role="button">Donate</button></a>*/}
 
             </div>
             <div

@@ -1,0 +1,21 @@
+.sub-container {
+  background-color: rebeccapurple;   /* Change later */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.sub-box {
+  justify-content: center;
+
+}
+
+.title {
+  color: white;
+  margin-right: 20px;
+}
+
+.textBox {
+  border-radius: 40px;
+}

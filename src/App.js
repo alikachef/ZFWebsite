@@ -1,9 +1,9 @@
 import PrayerTimes from './Components/PrayerTimes/prayerTimes';
 import Navbar from './Components/navbar/Navbar';
-import Newsletter from './Components/Newsletter/Newsletter';
-
-import './App.css';
+import Subscribe from './Components/Subscribe/Subscribe';
 import Header from './Components/header/Header';
+import Footer from './Components/footer/Footer';
+import './App.css';
 
 const App = () => {
   return (
@@ -11,7 +11,8 @@ const App = () => {
       <Navbar />
       <Header />
       <PrayerTimes />
-      <Newsletter />
+      <Subscribe />
+      <Footer />
     </div>
   );
 }

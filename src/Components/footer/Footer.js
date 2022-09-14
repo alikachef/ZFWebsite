@@ -3,7 +3,9 @@ import './footer.css';
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className='footerContainer'>
+      <div className='title'>The Zahra Foundation</div>
+    </div>
   )
 }
 
